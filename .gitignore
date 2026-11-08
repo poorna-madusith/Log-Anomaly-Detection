@@ -1,0 +1,36 @@
+# Raw datasets
+/datasets/
+
+# Generated data, checkpoints, profiles, and figures
+/implementations/dual_channel/artifacts/
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+*.pkl
+
+# Python caches and virtual environments
+**/__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# Secrets and local logs
+.env
+.env.*
+!.env.example
+*.log
+
+# Personal proposal and presentation
+/docs/20222166_w2083117_FYP_Project_Proposal_Updated.pdf
+/docs/poorna_kahandakorala_20222166_w2083117.pptx
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
