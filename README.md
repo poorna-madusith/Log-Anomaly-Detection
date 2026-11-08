@@ -9,6 +9,18 @@ Dual-Channel Log Anomaly Detection
 
 The implementation separates each task into `preprocessing/`, `training/`, `evaluation/`, `models/`, `benchmarks/`, and `visualization/`. Reproducible intermediate data, checkpoints, and figures are written under `implementations/dual_channel/artifacts/`.
 
+## Dataset downloads
+
+The raw datasets are hosted by LogHub on Zenodo. Download the archives from the links below, then extract the logs to the paths expected by the preprocessing scripts:
+
+| Dataset | Direct download | LogHub-reported size | Expected extracted files |
+| --- | --- | ---: | --- |
+| HDFS v1 | [HDFS_v1.zip](https://zenodo.org/records/8196385/files/HDFS_v1.zip?download=1) | 1.47 GiB | `datasets/HDFS/HDFS.log`, `datasets/HDFS/preprocessed/anomaly_label.csv` |
+| BGL | [BGL.zip](https://zenodo.org/records/8196385/files/BGL.zip?download=1) | 708.76 MiB | `datasets/BGL/BGL.log` |
+| Thunderbird | [Thunderbird.tar.gz](https://zenodo.org/records/8196385/files/Thunderbird.tar.gz?download=1) | 29.60 GiB | `datasets/Thunderbird/Thunderbird.log` |
+
+See the [LogHub catalog](https://github.com/logpai/loghub) for dataset descriptions and citation guidance. The dataset directory is excluded by `.gitignore`; keep these large source files out of GitHub.
+
 ## Run the dual-channel implementation
 
 Open a terminal in `implementations/dual_channel`. Run preprocessing, training, and evaluation for each dataset:
