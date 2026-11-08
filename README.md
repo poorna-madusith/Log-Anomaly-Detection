@@ -1,4 +1,4 @@
-# FYP 20222166 — Dual-Channel Log Anomaly Detection
+Dual-Channel Log Anomaly Detection
 
 ## Project structure
 
